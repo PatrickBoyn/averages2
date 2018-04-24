@@ -12,7 +12,7 @@ class Averages:
              print("No database by that name exists. ")
         end = datetime.now()
         final = end - start
-        print(final)
+        print("The program took: " + str(final))
 
 A = Averages()
 
