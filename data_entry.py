@@ -10,4 +10,7 @@ class Connection:
         cur = conn.cursor()
 
 class AddNumber(Connection):
-    add_number = "INSERT INTO {} (number_id, number, date_created) VALUES({})".format(self.db, number)
+    def __init__(self):
+        self.number = 0
+    def add_number(self):
+         add_number = "INSERT INTO {} (number_id, number, date_created) VALUES({})".format(self.db, number)
